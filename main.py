@@ -20,7 +20,7 @@ width = int(video.get(cv2.CAP_PROP_FRAME_WIDTH))
 height = int(video.get(cv2.CAP_PROP_FRAME_HEIGHT))
 print(width,height)
 # Declare default image for applying filters
-image=cv2.imread("/app/cat_photos.jpg",cv2.IMREAD_UNCHANGED)
+image=cv2.imread("cat_photos.jpg",cv2.IMREAD_UNCHANGED)
 print(image.shape)
 # Resize input image 
 image1=cv2.resize(image, (width, height))

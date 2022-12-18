@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <style>
+body {
+    font-family: Garamond;
+    text-align: center;
+    background-image: url({{ url_for('static', filename='common_background_image.jpg') }});
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+        color:white;
+}
+.center_title {
+  margin: 0;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color:white;
+}
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+    </style>
+<body>
+    
+<div class="center_title">
+<h3><b>Smart Phone Camera like Filters using OpenCV - Upload Images</b></h3>
+</div>
+    
+<form action="/image_upload/" method = "post" enctype = "multipart/form-data" class="center">
+    <input type = "file" name = "image"  accept="image/*"  />
+  <label for="image">Select image:</label>
+    <input type = "submit"/>
+</form>
+</body>
+</html>
+
